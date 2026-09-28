@@ -1,0 +1,5 @@
+status: unknown
+environment: production
+version: latest
+approval: pending
+rollback: none
