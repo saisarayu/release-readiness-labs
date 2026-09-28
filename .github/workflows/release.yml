@@ -48,6 +48,9 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Install app dependencies
+        run: npm ci --prefix app
+
       - name: Deploy to Production
         run: |
           chmod +x scripts/deploy.sh
