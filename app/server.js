@@ -7,6 +7,12 @@ app.get('/', (req, res) => {
 });
 
 app.get('/health', (req, res) => {
+ const dep = checkout();
+ if(!dep){
+  res.status(503).json({status: 'error', message: 'Dependency checkout failed'});
+  return;
+ }
+
   res.status(200).json({ status: 'ok', version: process.env.npm_package_version });
 });
 

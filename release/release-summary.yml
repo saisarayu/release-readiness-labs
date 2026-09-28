@@ -1,5 +1,5 @@
-status: unknown
-environment: production
-version: latest
-approval: pending
-rollback: none
+status: "pending"
+environment: "production"
+version: "v2.3.0"
+approval: "approval is pending"
+rollback: "none"
